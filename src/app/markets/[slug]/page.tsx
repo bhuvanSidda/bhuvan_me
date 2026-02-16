@@ -5,6 +5,7 @@ import { getAllSlugs, getPostBySlug } from "@/lib/content";
 import { getReadingTime } from "@/lib/reading-time";
 import { MarkdownRenderer } from "@/components/content/MarkdownRenderer";
 import { Panel } from "@/components/ui/Panel";
+import { TagLink } from "@/components/content/TagLink";
 import Link from "next/link";
 
 interface Props {
@@ -58,9 +59,7 @@ export default async function MarketPostPage({ params }: Props) {
           {post.frontmatter.tags && (
             <div className="mt-2 flex gap-2">
               {post.frontmatter.tags.map((tag) => (
-                <span key={tag} className="font-mono text-xs text-terminal-text-dim">
-                  [{tag}]
-                </span>
+                <TagLink key={tag} tag={tag} accent="green" />
               ))}
             </div>
           )}

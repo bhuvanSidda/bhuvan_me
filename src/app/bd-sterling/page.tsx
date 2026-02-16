@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Panel } from "@/components/ui/Panel";
+import { EmpireTerminal } from "@/components/sterling/EmpireTerminal";
 
 export const metadata: Metadata = {
   title: "BD Sterling Capital Management",
@@ -66,6 +67,8 @@ export default function BDSterlingPage() {
               Disclaimer
             </Link>
           </div>
+
+          <EmpireTerminal />
         </div>
       </Panel>
     </div>

@@ -19,23 +19,16 @@ export default function Home() {
       <MarketTicker />
 
       <div className="mx-auto max-w-7xl px-4 py-8">
-        {/* Top row */}
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="md:col-span-2">
+          {/* Left column */}
+          <div className="md:col-span-2 space-y-4">
             <LatestEssay post={latestLetter} />
+            <LatestMarket post={latestMarket} />
           </div>
+          {/* Right column */}
           <div className="space-y-4">
             <ClockWidget />
             <NowReading />
-          </div>
-        </div>
-
-        {/* Bottom row */}
-        <div className="mt-4 grid gap-4 md:grid-cols-3">
-          <div className="md:col-span-2">
-            <LatestMarket post={latestMarket} />
-          </div>
-          <div className="space-y-4">
             <RecentProjects projects={projects} />
             <QuoteWidget />
           </div>

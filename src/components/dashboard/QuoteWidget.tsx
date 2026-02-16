@@ -13,8 +13,8 @@ export function QuoteWidget() {
   }, []);
 
   return (
-    <Panel title="QUOTE" accent="cyan">
-      <blockquote className="border-l-2 border-system-cyan/30 pl-3">
+    <Panel title="QUOTE" accent="green">
+      <blockquote className="border-l-2 border-bloomberg-green/30 pl-3">
         <p className="font-sans text-sm leading-relaxed text-terminal-text-dim italic">
           &ldquo;{quote.text}&rdquo;
         </p>

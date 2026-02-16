@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/content";
 import { Panel } from "@/components/ui/Panel";
 import { Badge } from "@/components/ui/Badge";
+import { TagLink } from "@/components/content/TagLink";
 import { PageTransition } from "@/components/ui/PageTransition";
 
 export const metadata: Metadata = {
@@ -50,12 +51,7 @@ export default function ProjectsPage() {
                 {project.frontmatter.tags && (
                   <div className="flex flex-wrap gap-1">
                     {project.frontmatter.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="font-mono text-xs text-terminal-text-dim"
-                      >
-                        [{tag}]
-                      </span>
+                      <TagLink key={tag} tag={tag} accent="pink" />
                     ))}
                   </div>
                 )}

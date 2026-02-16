@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import type { Post, PostWithHTML, PostFrontmatter, ContentSection } from "@/types/content";
+import type { Post, PostWithHTML, PostFrontmatter, ContentSection, AccentColor } from "@/types/content";
 import { processMarkdown } from "./markdown";
 
 const contentDirectory = path.join(process.cwd(), "content");
@@ -67,6 +67,44 @@ export function getLatestPost(section: ContentSection): Post | null {
 
 export function getFeaturedPosts(section: ContentSection): Post[] {
   return getAllPosts(section).filter((p) => p.frontmatter.featured);
+}
+
+export interface TaggedPost extends Post {
+  section: ContentSection;
+}
+
+const taggableSections: { section: ContentSection; accent: AccentColor; label: string }[] = [
+  { section: "letters", accent: "red", label: "Letters" },
+  { section: "markets", accent: "green", label: "Markets" },
+  { section: "movies", accent: "blue", label: "Movies" },
+  { section: "projects", accent: "pink", label: "Projects" },
+  { section: "readings", accent: "purple", label: "Readings" },
+];
+
+export { taggableSections };
+
+export function getAllTags(): string[] {
+  const tags = new Set<string>();
+  for (const { section } of taggableSections) {
+    for (const post of getAllPosts(section)) {
+      post.frontmatter.tags?.forEach((tag) => tags.add(tag));
+    }
+  }
+  return Array.from(tags).sort();
+}
+
+export function getPostsByTag(tag: string): TaggedPost[] {
+  const results: TaggedPost[] = [];
+  for (const { section } of taggableSections) {
+    for (const post of getAllPosts(section)) {
+      if (post.frontmatter.tags?.includes(tag)) {
+        results.push({ ...post, section });
+      }
+    }
+  }
+  return results.sort(
+    (a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
+  );
 }
 
 export function getAllSlugs(section: ContentSection): string[] {

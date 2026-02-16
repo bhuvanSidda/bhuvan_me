@@ -2,6 +2,7 @@ import Link from "next/link";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import type { Post, AccentColor } from "@/types/content";
+import { TagLink } from "@/components/content/TagLink";
 
 interface PostCardProps {
   post: Post;
@@ -33,12 +34,7 @@ export function PostCard({ post, href, accent = "green" }: PostCardProps) {
             {format(new Date(post.frontmatter.date), "yyyy.MM.dd")}
           </time>
           {post.frontmatter.tags?.slice(0, 2).map((tag) => (
-            <span
-              key={tag}
-              className="font-mono text-xs text-terminal-text-dim"
-            >
-              [{tag}]
-            </span>
+            <TagLink key={tag} tag={tag} accent={accent} />
           ))}
         </div>
         <h3

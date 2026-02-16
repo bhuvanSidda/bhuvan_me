@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import { getAllSlugs, getPostBySlug } from "@/lib/content";
 import { MarkdownRenderer } from "@/components/content/MarkdownRenderer";
 import { Panel } from "@/components/ui/Panel";
+import { TagLink } from "@/components/content/TagLink";
 import Link from "next/link";
 
 interface Props {
@@ -60,6 +61,13 @@ export default async function MovieReviewPage({ params }: Props) {
             <p className="mt-1 font-mono text-xs text-terminal-text-dim">
               {post.frontmatter.director} · {post.frontmatter.year}
             </p>
+          )}
+          {post.frontmatter.tags && (
+            <div className="mt-2 flex gap-2">
+              {post.frontmatter.tags.map((tag) => (
+                <TagLink key={tag} tag={tag} accent="blue" />
+              ))}
+            </div>
           )}
         </header>
         <MarkdownRenderer html={post.html} accent="blue" />
