@@ -6,26 +6,22 @@ tags: ["building", "philosophy"]
 featured: false
 ---
 
-There is a fundamental difference between thinking about doing something and actually doing it. The gap between theory and practice is where most ambition goes to die.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
 
 ## The Honesty of Building
 
-When you build something — a company, a product, an essay — you confront reality in a way that pure thinking never allows. Every assumption gets tested. Every weakness gets exposed. Every hand-wave gets called out by the unforgiving physics of the real world.
+Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula ut dictum pharetra, nisi nunc fringilla magna, in commodo elit erat nec turpis.
 
-This is why building is the most honest form of thinking. You can have the most elegant theory in the world, but if it doesn't survive contact with reality, it's worthless.
+Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla.
 
 ## The Builder's Mindset
 
-The best builders I know share a common trait: they have a bias toward action. They don't wait for perfect information. They don't endlessly plan. They build something small, ship it, learn from the feedback, and iterate.
+Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum. Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
 
-This isn't recklessness. It's the recognition that you learn more from one hour of building than from ten hours of planning.
+Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum.
 
 ## Start Small
 
-The most important thing about building is starting. Not starting big. Not starting perfectly. Just starting.
+Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.
 
-Write the first paragraph. Write the first line of code. Make the first sales call. The quality of the start doesn't matter nearly as much as the fact of starting.
-
-Because once you start, compounding takes over. Each iteration is better than the last. Each failure teaches you something. Each small win builds momentum.
-
-The world belongs to the builders. Start building.
+Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.

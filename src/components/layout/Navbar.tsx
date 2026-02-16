@@ -37,7 +37,7 @@ export function Navbar() {
       <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4">
         <Link
           href="/"
-          className="font-mono text-sm font-bold tracking-wider text-system-cyan transition-colors hover:text-system-cyan/80"
+          className="font-mono text-sm font-bold tracking-wider text-bloomberg-green transition-colors hover:text-bloomberg-green/80"
         >
           BHUVAN.ME
         </Link>

@@ -9,20 +9,18 @@ year: 2007
 featured: true
 ---
 
-*There Will Be Blood* is not merely a film about the oil industry. It is a study of what happens when ambition becomes untethered from humanity.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mauris eu risus. Vestibulum auctor dapibus neque.
 
 ## Daniel Plainview
 
-Daniel Day-Lewis delivers what may be the greatest screen performance ever committed to film. His Daniel Plainview is a man of terrifying competence and even more terrifying emptiness. He wants to succeed not because success will bring him joy, but because he "has a competition in him" — he wants others to fail.
+Nunc dignissim risus id metus. Cras ornare tristique elit. Vivamus vestibulum ntulla nec ante. Praesent placerat risus quis eros. Fusce pellentesque suscipit nibh. Integer vitae libero ac risus egestas placerat. Vestibulum commodo felis quis tortor.
 
 ## The Architecture of Isolation
 
-Anderson constructs the film like a slow-building earthquake. The vast, empty landscapes mirror Plainview's interior — there is no one in there. His adoption of H.W., his only genuine connection, becomes corrupted by his own inability to be vulnerable.
+Ut aliquam sollicitudin leo. Cras iaculis ultricies nulla. Donec quis dui at dolor tempor interdum. Vivamus molestie gravida turpis. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci.
 
 ## Why It Matters
 
-This film matters because it tells the truth about a certain kind of ambition — the kind that builds empires but destroys the builder. Plainview ends the film alone in his mansion, surrounded by wealth, having driven away everyone who ever mattered.
+Nulla facilisi. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
 
-"I'm finished," he says at the end. And he is.
-
-A perfect film.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.

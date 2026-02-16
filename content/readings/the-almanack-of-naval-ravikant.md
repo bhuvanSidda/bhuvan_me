@@ -6,20 +6,20 @@ tags: ["philosophy", "wealth"]
 featured: true
 ---
 
-This isn't a traditional book — it's a curated collection of Naval Ravikant's tweets, podcast transcripts, and essays, assembled by Eric Jorgenson. And yet it might be the most important book on wealth and happiness written in the last decade.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
 
 ## Key Ideas
 
-**Specific knowledge** is knowledge that cannot be trained for. It's found by pursuing your genuine curiosity and passion rather than whatever is hot right now. If it can be taught in a classroom, someone else can learn it and compete with you.
+**Nam quam nunc** blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
 
-**Leverage** comes in three forms: labor (people working for you), capital (money working for you), and products with no marginal cost of replication (code and media). The last form is the most democratic — you don't need anyone's permission to write code or create content.
+**Nullam quis ante** etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
 
-**Happiness is a skill** you can develop, not a destination you arrive at. Naval's framework: happiness = health + wealth + good relationships - wanting things you don't have.
+**Sed consequat** leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
 
 ## What Stuck With Me
 
-The idea that stuck most: *"Earn with your mind, not your time."* Building leverage through code, writing, and capital means your income becomes disconnected from the hours you put in. This is the fundamental shift that separates linear careers from exponential ones.
+Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
 
 ## Verdict
 
-Essential reading. Short enough to finish in an afternoon, deep enough to revisit for years.
+Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.

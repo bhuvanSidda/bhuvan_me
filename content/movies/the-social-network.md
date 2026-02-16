@@ -9,14 +9,14 @@ year: 2010
 featured: false
 ---
 
-Every generation gets the creation myth it deserves. For ours, it's *The Social Network* — a film about a young man who builds the most connected platform in human history while being fundamentally disconnected from the people around him.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam.
 
 ## Sorkin's Script
 
-The screenplay moves like a machine — every line serves double duty, advancing plot while revealing character. The deposition scenes are masterful framing devices, creating dramatic irony at every turn.
+Sed hendrerit. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
 
 ## The Ending
 
-The final shot — Zuckerberg alone, refreshing a friend request — is one of the most devastating endings in modern cinema. He built a tool for connection because he couldn't connect. He won everything and lost everything that mattered.
+Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
 
-An essential film about the modern world.
+In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.

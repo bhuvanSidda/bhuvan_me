@@ -6,25 +6,25 @@ tags: ["investing", "mental-models"]
 featured: false
 ---
 
-Charlie Munger is Warren Buffett's partner at Berkshire Hathaway and arguably the more interesting thinker of the two. This book collects his speeches, talks, and the famous "mental models" framework that has influenced a generation of investors and thinkers.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
 ## The Mental Models Approach
 
-Munger's core insight: you need a latticework of mental models from multiple disciplines to think clearly about the world. Psychology, physics, biology, economics, mathematics — each provides tools that the others lack.
+Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
 
-The most dangerous thing is to have only one model. "To a man with a hammer, everything looks like a nail."
+Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
 
 ## Key Mental Models
 
-- **Inversion**: Instead of asking "How do I succeed?", ask "How would I certainly fail?" Then avoid those things.
-- **Circle of Competence**: Know what you know. More importantly, know what you don't know. Stay within your circle.
-- **Second-Order Thinking**: Consider not just the immediate effect, but the effect of the effect. Most people stop at first-order.
-- **Margin of Safety**: Always leave room for error. In investing, in engineering, in life.
+- **Lorem ipsum**: Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.
+- **Ut labore**: Et dolore magna aliqua ut enim ad minim veniam quis nostrud.
+- **Exercitation**: Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.
+- **Irure dolor**: In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
 
 ## On Character
 
-What makes this book special isn't the investing wisdom — it's the emphasis on character. Munger insists that the best way to get what you want in life is to deserve it. Be reliable. Be ethical. Do what you say you'll do.
+Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
 
 ## Still Reading
 
-I'm partway through the collected speeches. Each one rewards careful, slow reading. This is not a book you rush through.
+Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
