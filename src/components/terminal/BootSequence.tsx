@@ -72,9 +72,9 @@ export function BootSequence({ children }: { children: React.ReactNode }) {
                     key={i}
                     className={`font-mono text-sm ${
                       line.text.includes("ONLINE") || line.text.includes("Welcome")
-                        ? "text-bloomberg-green"
+                        ? "text-system-cyan"
                         : line.text.includes("████")
-                        ? "text-bloomberg-green"
+                        ? "text-system-cyan"
                         : "text-terminal-text-dim"
                     }`}
                   >

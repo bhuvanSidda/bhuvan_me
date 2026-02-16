@@ -6,7 +6,7 @@ export function Footer() {
           &copy; {new Date().getFullYear()} BHUVAN.ME — All rights reserved
         </p>
         <p className="font-mono text-xs text-terminal-text-dim">
-          SYSTEM STATUS: <span className="text-bloomberg-green">ONLINE</span>
+          SYSTEM STATUS: <span className="text-system-cyan">ONLINE</span>
         </p>
       </div>
     </footer>

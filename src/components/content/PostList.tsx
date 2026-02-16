@@ -1,5 +1,8 @@
+"use client";
+
 import type { Post, AccentColor } from "@/types/content";
 import { PostCard } from "./PostCard";
+import { motion } from "framer-motion";
 
 interface PostListProps {
   posts: Post[];
@@ -20,13 +23,19 @@ export function PostList({ posts, basePath, accent = "green" }: PostListProps) {
 
   return (
     <div className="space-y-3">
-      {posts.map((post) => (
-        <PostCard
+      {posts.map((post, i) => (
+        <motion.div
           key={post.slug}
-          post={post}
-          href={`${basePath}/${post.slug}`}
-          accent={accent}
-        />
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: i * 0.08 }}
+        >
+          <PostCard
+            post={post}
+            href={`${basePath}/${post.slug}`}
+            accent={accent}
+          />
+        </motion.div>
       ))}
     </div>
   );

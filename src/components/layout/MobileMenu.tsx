@@ -5,6 +5,27 @@ import { usePathname } from "next/navigation";
 import { navItems } from "@/config/navigation";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import type { AccentColor } from "@/types/content";
+
+const accentColorClasses: Record<AccentColor, string> = {
+  red: "text-letters-red",
+  green: "text-bloomberg-green",
+  amber: "text-sterling-amber",
+  blue: "text-movies-blue",
+  pink: "text-projects-pink",
+  purple: "text-readings-purple",
+  cyan: "text-system-cyan",
+};
+
+const hoverColorClasses: Record<AccentColor, string> = {
+  red: "hover:text-letters-red",
+  green: "hover:text-bloomberg-green",
+  amber: "hover:text-sterling-amber",
+  blue: "hover:text-movies-blue",
+  pink: "hover:text-projects-pink",
+  purple: "hover:text-readings-purple",
+  cyan: "hover:text-system-cyan",
+};
 
 interface MobileMenuProps {
   open: boolean;
@@ -25,7 +46,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           className="fixed inset-0 z-50 flex flex-col bg-terminal-black"
         >
           <div className="flex h-12 items-center justify-between border-b border-terminal-border px-4">
-            <span className="font-mono text-sm text-bloomberg-green">
+            <span className="font-mono text-sm text-system-cyan">
               BHUVAN.ME
             </span>
             <button
@@ -59,8 +80,8 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                       className={cn(
                         "block py-3 font-mono text-lg tracking-wider transition-colors",
                         isActive
-                          ? "text-bloomberg-green"
-                          : "text-terminal-text-dim hover:text-terminal-text"
+                          ? accentColorClasses[item.accent]
+                          : cn("text-terminal-text-dim", hoverColorClasses[item.accent])
                       )}
                     >
                       <span className="text-terminal-text-dim">

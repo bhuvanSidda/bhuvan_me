@@ -12,22 +12,22 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return getAllSlugs("letters").map((slug) => ({ slug }));
+  return getAllSlugs("readings").map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getPostBySlug("letters", slug);
+  const post = await getPostBySlug("readings", slug);
   if (!post) return {};
   return {
-    title: post.frontmatter.title,
+    title: `${post.frontmatter.title} — Reading Notes`,
     description: post.frontmatter.excerpt,
   };
 }
 
-export default async function LetterPage({ params }: Props) {
+export default async function ReadingNotePage({ params }: Props) {
   const { slug } = await params;
-  const post = await getPostBySlug("letters", slug);
+  const post = await getPostBySlug("readings", slug);
 
   if (!post) {
     notFound();
@@ -36,13 +36,13 @@ export default async function LetterPage({ params }: Props) {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
       <Link
-        href="/letters"
-        className="mb-6 inline-block font-mono text-xs text-terminal-text-dim transition-colors hover:text-letters-red"
+        href="/readings"
+        className="mb-6 inline-block font-mono text-xs text-terminal-text-dim transition-colors hover:text-readings-purple"
       >
-        ← Back to Letters
+        ← Back to Readings
       </Link>
 
-      <Panel title="LETTER" accent="red">
+      <Panel title="READING NOTES" accent="purple">
         <header className="mb-8">
           <div className="flex items-center gap-3">
             <time className="font-mono text-xs text-terminal-text-dim">
@@ -65,7 +65,7 @@ export default async function LetterPage({ params }: Props) {
             </div>
           )}
         </header>
-        <MarkdownRenderer html={post.html} accent="red" />
+        <MarkdownRenderer html={post.html} accent="purple" />
       </Panel>
     </div>
   );

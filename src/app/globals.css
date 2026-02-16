@@ -9,6 +9,11 @@
   --color-bloomberg-green: #00d26a;
   --color-sterling-amber: #f0a500;
   --color-bloomberg-red: #ff433d;
+  --color-letters-red: #dd3737;
+  --color-movies-blue: #4a9eff;
+  --color-projects-pink: #e44190;
+  --color-readings-purple: #a78bfa;
+  --color-system-cyan: #22d3ee;
   --color-terminal-text: #e0e0e0;
   --color-terminal-text-dim: #888888;
 
@@ -97,4 +102,28 @@ body {
   --tw-prose-links: var(--color-sterling-amber);
   --tw-prose-quote-borders: var(--color-sterling-amber);
   --tw-prose-code: var(--color-sterling-amber);
+}
+
+.prose-red {
+  --tw-prose-links: var(--color-letters-red);
+  --tw-prose-quote-borders: var(--color-letters-red);
+  --tw-prose-code: var(--color-letters-red);
+}
+
+.prose-blue {
+  --tw-prose-links: var(--color-movies-blue);
+  --tw-prose-quote-borders: var(--color-movies-blue);
+  --tw-prose-code: var(--color-movies-blue);
+}
+
+.prose-pink {
+  --tw-prose-links: var(--color-projects-pink);
+  --tw-prose-quote-borders: var(--color-projects-pink);
+  --tw-prose-code: var(--color-projects-pink);
+}
+
+.prose-purple {
+  --tw-prose-links: var(--color-readings-purple);
+  --tw-prose-quote-borders: var(--color-readings-purple);
+  --tw-prose-code: var(--color-readings-purple);
 }

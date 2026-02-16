@@ -14,9 +14,9 @@ export function ClockWidget() {
 
   if (!time) {
     return (
-      <Panel title="CLOCK">
+      <Panel title="CLOCK" accent="cyan">
         <div className="flex flex-col items-center py-2">
-          <div className="font-mono text-2xl text-bloomberg-green">--:--:--</div>
+          <div className="font-mono text-2xl text-system-cyan">--:--:--</div>
           <div className="mt-1 font-mono text-xs text-terminal-text-dim">Loading...</div>
         </div>
       </Panel>
@@ -35,9 +35,9 @@ export function ClockWidget() {
   });
 
   return (
-    <Panel title="CLOCK">
+    <Panel title="CLOCK" accent="cyan">
       <div className="flex flex-col items-center py-2">
-        <div className="font-mono text-2xl text-bloomberg-green">
+        <div className="font-mono text-2xl text-system-cyan">
           {hours}:{minutes}:{seconds}
         </div>
         <div className="mt-1 font-mono text-xs text-terminal-text-dim">

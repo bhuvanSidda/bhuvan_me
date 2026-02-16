@@ -50,7 +50,7 @@ export default async function InvestorLetterPage({ params }: Props) {
             {post.frontmatter.title}
           </h1>
         </header>
-        <MarkdownRenderer html={post.html} amber />
+        <MarkdownRenderer html={post.html} accent="amber" />
       </Panel>
     </div>
   );

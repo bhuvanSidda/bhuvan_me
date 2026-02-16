@@ -6,6 +6,27 @@ import { useState } from "react";
 import { navItems } from "@/config/navigation";
 import { cn } from "@/lib/utils";
 import { MobileMenu } from "./MobileMenu";
+import type { AccentColor } from "@/types/content";
+
+const accentColorClasses: Record<AccentColor, string> = {
+  red: "text-letters-red",
+  green: "text-bloomberg-green",
+  amber: "text-sterling-amber",
+  blue: "text-movies-blue",
+  pink: "text-projects-pink",
+  purple: "text-readings-purple",
+  cyan: "text-system-cyan",
+};
+
+const hoverColorClasses: Record<AccentColor, string> = {
+  red: "hover:text-letters-red",
+  green: "hover:text-bloomberg-green",
+  amber: "hover:text-sterling-amber",
+  blue: "hover:text-movies-blue",
+  pink: "hover:text-projects-pink",
+  purple: "hover:text-readings-purple",
+  cyan: "hover:text-system-cyan",
+};
 
 export function Navbar() {
   const pathname = usePathname();
@@ -16,7 +37,7 @@ export function Navbar() {
       <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4">
         <Link
           href="/"
-          className="font-mono text-sm font-bold tracking-wider text-bloomberg-green transition-colors hover:text-bloomberg-green/80"
+          className="font-mono text-sm font-bold tracking-wider text-system-cyan transition-colors hover:text-system-cyan/80"
         >
           BHUVAN.ME
         </Link>
@@ -33,8 +54,8 @@ export function Navbar() {
                 className={cn(
                   "font-mono text-xs tracking-wider transition-colors",
                   isActive
-                    ? "text-bloomberg-green"
-                    : "text-terminal-text-dim hover:text-terminal-text"
+                    ? accentColorClasses[item.accent]
+                    : cn("text-terminal-text-dim", hoverColorClasses[item.accent])
                 )}
               >
                 {item.label}

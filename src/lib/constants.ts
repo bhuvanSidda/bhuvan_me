@@ -7,7 +7,7 @@ export const SECTIONS = {
     title: "Letters",
     description: "Essays and letters about life, ambition, and the world.",
     directory: "letters",
-    accent: "green" as const,
+    accent: "red" as const,
   },
   markets: {
     title: "Markets",
@@ -19,13 +19,19 @@ export const SECTIONS = {
     title: "Movies",
     description: "Film reviews and commentary.",
     directory: "movies",
-    accent: "green" as const,
+    accent: "blue" as const,
   },
   projects: {
     title: "Projects",
     description: "Things I've built and am building.",
     directory: "projects",
-    accent: "green" as const,
+    accent: "pink" as const,
+  },
+  readings: {
+    title: "Readings",
+    description: "Book notes, reviews, and reading recommendations.",
+    directory: "readings",
+    accent: "purple" as const,
   },
   "bd-sterling": {
     title: "BD Sterling Capital Management",

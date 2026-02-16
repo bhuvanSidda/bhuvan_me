@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/content";
 import { Panel } from "@/components/ui/Panel";
 import { Badge } from "@/components/ui/Badge";
+import { PageTransition } from "@/components/ui/PageTransition";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -12,8 +13,9 @@ export default function ProjectsPage() {
   const projects = getAllPosts("projects");
 
   return (
+    <PageTransition>
     <div className="mx-auto max-w-5xl px-4 py-8">
-      <Panel title="PROJECTS" accent="green">
+      <Panel title="PROJECTS" accent="pink">
         <p className="mb-6 font-mono text-xs text-terminal-text-dim">
           {">"} Things I&apos;ve built and am building.
         </p>
@@ -27,14 +29,17 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.slug}
-                className="rounded border border-terminal-border bg-terminal-black p-4"
+                className="rounded border border-terminal-border bg-terminal-black p-4 transition-all duration-200 hover:border-projects-pink/50"
               >
                 <div className="mb-2 flex items-center justify-between">
                   <h3 className="font-mono text-sm font-medium text-terminal-text">
                     {project.frontmatter.title}
                   </h3>
                   {project.frontmatter.status && (
-                    <Badge variant={project.frontmatter.status === "Active" ? "active" : "tag"}>
+                    <Badge
+                      variant={project.frontmatter.status === "Active" ? "active" : "tag"}
+                      accent="pink"
+                    >
                       {project.frontmatter.status}
                     </Badge>
                   )}
@@ -60,5 +65,6 @@ export default function ProjectsPage() {
         )}
       </Panel>
     </div>
+    </PageTransition>
   );
 }

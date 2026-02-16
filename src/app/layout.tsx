@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`${jetbrainsMono.variable} ${inter.variable} font-mono antialiased`}>
         <Navbar />
         <main className="min-h-screen pt-12">{children}</main>
+        <ScrollToTop />
         <Footer />
       </body>
     </html>

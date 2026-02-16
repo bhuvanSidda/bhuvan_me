@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import { getAllSlugs, getPostBySlug } from "@/lib/content";
+import { getReadingTime } from "@/lib/reading-time";
 import { MarkdownRenderer } from "@/components/content/MarkdownRenderer";
 import { Panel } from "@/components/ui/Panel";
 import Link from "next/link";
@@ -43,9 +44,14 @@ export default async function MarketPostPage({ params }: Props) {
 
       <Panel title="MARKET COMMENTARY" accent="green">
         <header className="mb-8">
-          <time className="font-mono text-xs text-terminal-text-dim">
-            {format(new Date(post.frontmatter.date), "MMMM d, yyyy")}
-          </time>
+          <div className="flex items-center gap-3">
+            <time className="font-mono text-xs text-terminal-text-dim">
+              {format(new Date(post.frontmatter.date), "MMMM d, yyyy")}
+            </time>
+            <span className="font-mono text-xs text-terminal-text-dim">
+              · {getReadingTime(post.content)} min read
+            </span>
+          </div>
           <h1 className="mt-2 font-mono text-2xl font-bold text-white">
             {post.frontmatter.title}
           </h1>

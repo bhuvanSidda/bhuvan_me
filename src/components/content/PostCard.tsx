@@ -10,8 +10,13 @@ interface PostCardProps {
 }
 
 const accentColors: Record<AccentColor, string> = {
+  red: "hover:border-letters-red/50 group-hover:text-letters-red",
   green: "hover:border-bloomberg-green/50 group-hover:text-bloomberg-green",
   amber: "hover:border-sterling-amber/50 group-hover:text-sterling-amber",
+  blue: "hover:border-movies-blue/50 group-hover:text-movies-blue",
+  pink: "hover:border-projects-pink/50 group-hover:text-projects-pink",
+  purple: "hover:border-readings-purple/50 group-hover:text-readings-purple",
+  cyan: "hover:border-system-cyan/50 group-hover:text-system-cyan",
 };
 
 export function PostCard({ post, href, accent = "green" }: PostCardProps) {
@@ -39,7 +44,7 @@ export function PostCard({ post, href, accent = "green" }: PostCardProps) {
         <h3
           className={cn(
             "mb-1 font-mono text-sm font-medium text-terminal-text transition-colors",
-            accent === "green" ? "group-hover:text-bloomberg-green" : "group-hover:text-sterling-amber"
+            accentColors[accent]
           )}
         >
           {post.frontmatter.title}

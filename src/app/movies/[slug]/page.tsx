@@ -36,19 +36,19 @@ export default async function MovieReviewPage({ params }: Props) {
     <div className="mx-auto max-w-3xl px-4 py-8">
       <Link
         href="/movies"
-        className="mb-6 inline-block font-mono text-xs text-terminal-text-dim transition-colors hover:text-bloomberg-green"
+        className="mb-6 inline-block font-mono text-xs text-terminal-text-dim transition-colors hover:text-movies-blue"
       >
         ← Back to Movies
       </Link>
 
-      <Panel title="MOVIE REVIEW" accent="green">
+      <Panel title="MOVIE REVIEW" accent="blue">
         <header className="mb-8">
           <div className="flex items-center gap-4">
             <time className="font-mono text-xs text-terminal-text-dim">
               {format(new Date(post.frontmatter.date), "MMMM d, yyyy")}
             </time>
             {post.frontmatter.rating && (
-              <span className="font-mono text-xs text-bloomberg-green">
+              <span className="font-mono text-xs text-movies-blue">
                 Rating: {post.frontmatter.rating}/10
               </span>
             )}
@@ -62,7 +62,7 @@ export default async function MovieReviewPage({ params }: Props) {
             </p>
           )}
         </header>
-        <MarkdownRenderer html={post.html} />
+        <MarkdownRenderer html={post.html} accent="blue" />
       </Panel>
     </div>
   );

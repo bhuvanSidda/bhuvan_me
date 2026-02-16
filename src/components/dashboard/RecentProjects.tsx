@@ -9,7 +9,7 @@ interface RecentProjectsProps {
 
 export function RecentProjects({ projects }: RecentProjectsProps) {
   return (
-    <Panel title="RECENT PROJECTS">
+    <Panel title="RECENT PROJECTS" accent="pink">
       {projects.length === 0 ? (
         <p className="font-mono text-sm text-terminal-text-dim">
           {">"} No projects yet.
@@ -23,11 +23,14 @@ export function RecentProjects({ projects }: RecentProjectsProps) {
               className="group block"
             >
               <div className="flex items-start justify-between">
-                <h4 className="font-mono text-sm text-terminal-text transition-colors group-hover:text-bloomberg-green">
+                <h4 className="font-mono text-sm text-terminal-text transition-colors group-hover:text-projects-pink">
                   {project.frontmatter.title}
                 </h4>
                 {project.frontmatter.status && (
-                  <Badge variant={project.frontmatter.status === "Active" ? "active" : "tag"}>
+                  <Badge
+                    variant={project.frontmatter.status === "Active" ? "active" : "tag"}
+                    accent="pink"
+                  >
                     {project.frontmatter.status}
                   </Badge>
                 )}
