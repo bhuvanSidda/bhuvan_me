@@ -1,7 +1,7 @@
 ---
 title: "On Ambition"
 date: "2026-02-10"
-excerpt: "A meditation on the nature of ambition and why the most important thing is to work on something you care about."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 tags: ["philosophy", "life"]
 featured: true
 ---

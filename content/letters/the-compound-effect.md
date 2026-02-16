@@ -1,7 +1,7 @@
 ---
 title: "The Compound Effect"
 date: "2026-01-15"
-excerpt: "Small daily improvements lead to staggering long-term results. The math is simple but the patience required is extraordinary."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus."
 tags: ["growth", "discipline"]
 featured: false
 ---

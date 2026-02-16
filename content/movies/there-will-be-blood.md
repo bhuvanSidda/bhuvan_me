@@ -1,7 +1,7 @@
 ---
 title: "There Will Be Blood"
 date: "2026-02-01"
-excerpt: "Paul Thomas Anderson's masterpiece about ambition, isolation, and the price of empire."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mauris eu risus."
 tags: ["drama", "PTA"]
 rating: 10
 director: "Paul Thomas Anderson"

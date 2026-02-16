@@ -1,7 +1,7 @@
 ---
 title: "On Building"
 date: "2025-12-20"
-excerpt: "Building things is the most honest form of thinking. You can't hide behind abstractions when you ship something real."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt lacus nulla gravida orci."
 tags: ["building", "philosophy"]
 featured: false
 ---

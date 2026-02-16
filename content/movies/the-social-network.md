@@ -1,7 +1,7 @@
 ---
 title: "The Social Network"
 date: "2026-01-20"
-excerpt: "David Fincher and Aaron Sorkin's portrait of creation, betrayal, and the loneliness of building something that changes the world."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis ullamcorper velit phasellus gravida."
 tags: ["drama", "tech"]
 rating: 9
 director: "David Fincher"

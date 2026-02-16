@@ -1,7 +1,7 @@
 ---
 title: "The Case for Emerging Markets"
 date: "2025-12-28"
-excerpt: "After a decade of underperformance, emerging markets may be set up for a period of significant outperformance. Here's why."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam pellentesque ornare sem lacinia."
 tags: ["emerging-markets", "international"]
 featured: false
 ---

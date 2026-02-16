@@ -1,7 +1,7 @@
 ---
 title: "Poor Charlie's Almanack"
 date: "2026-01-10"
-excerpt: "Charlie Munger's mental models and worldly wisdom. A masterclass in thinking clearly from Buffett's indispensable partner."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor aenean massa."
 tags: ["investing", "mental-models"]
 featured: false
 ---

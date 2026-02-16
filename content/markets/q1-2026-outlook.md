@@ -1,7 +1,7 @@
 ---
 title: "Q1 2026 Market Outlook"
 date: "2026-01-05"
-excerpt: "A look at what we're watching as we enter the new year — rate cycles, AI infrastructure spending, and where value is hiding."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tellus ac cursus commodo tortor mauris."
 tags: ["macro", "outlook"]
 featured: true
 ---

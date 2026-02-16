@@ -1,7 +1,7 @@
 ---
 title: "The Almanack of Naval Ravikant"
 date: "2026-02-05"
-excerpt: "A collection of Naval's wisdom on wealth creation and happiness. The rare book that changes how you think about both money and meaning."
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus tellus eget condimentum rhoncus."
 tags: ["philosophy", "wealth"]
 featured: true
 ---
