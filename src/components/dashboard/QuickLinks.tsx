@@ -12,6 +12,7 @@ const hoverColorClasses: Record<AccentColor, string> = {
   purple: "hover:text-readings-purple group-hover:text-readings-purple",
   cyan: "hover:text-system-cyan group-hover:text-system-cyan",
   highlight: "hover:text-highlight group-hover:text-highlight",
+  orange: "hover:text-substack-orange group-hover:text-substack-orange",
 };
 
 export function QuickLinks() {

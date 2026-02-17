@@ -19,6 +19,7 @@ const accentColors: Record<AccentColor, string> = {
   purple: "hover:border-readings-purple/50 group-hover:text-readings-purple",
   cyan: "hover:border-system-cyan/50 group-hover:text-system-cyan",
   highlight: "hover:border-highlight/50 group-hover:text-highlight",
+  orange: "hover:border-substack-orange/50 group-hover:text-substack-orange",
 };
 
 export function PostCard({ post, href, accent = "green" }: PostCardProps) {

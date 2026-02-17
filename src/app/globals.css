@@ -3,20 +3,21 @@
 
 @theme inline {
   /* Bloomberg Terminal Colors */
-  --color-terminal-black: #0a0a0a;
-  --color-terminal-panel: #1a1a1a;
-  --color-terminal-border: #2a2a2a;
-  --color-bloomberg-green: #00d26a;
-  --color-sterling-amber: #f0a500;
-  --color-bloomberg-red: #ff433d;
-  --color-letters-red: #dd3737;
-  --color-movies-blue: #4a9eff;
-  --color-projects-pink: #e44190;
-  --color-readings-purple: #a78bfa;
-  --color-system-cyan: #22d3ee;
-  --color-highlight: #C62828;
-  --color-terminal-text: #e0e0e0;
-  --color-terminal-text-dim: #888888;
+  --color-terminal-black: #0d0d0d;
+  --color-terminal-panel: #1c1c1c;
+  --color-terminal-border: #333333;
+  --color-bloomberg-green: #00e676;
+  --color-sterling-amber: #ffb300;
+  --color-bloomberg-red: #ff5252;
+  --color-letters-red: #ef4444;
+  --color-movies-blue: #5eaaff;
+  --color-projects-pink: #f06292;
+  --color-readings-purple: #b794f6;
+  --color-substack-orange: #ff8c00;
+  --color-system-cyan: #34d9ed;
+  --color-highlight: #e53935;
+  --color-terminal-text: #ebebeb;
+  --color-terminal-text-dim: #9a9a9a;
 
   /* Fonts */
   --font-mono: "JetBrains Mono", ui-monospace, monospace;

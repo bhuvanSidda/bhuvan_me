@@ -16,6 +16,7 @@ const accentColorClasses: Record<AccentColor, string> = {
   purple: "text-readings-purple",
   cyan: "text-system-cyan",
   highlight: "text-highlight",
+  orange: "text-substack-orange",
 };
 
 const hoverColorClasses: Record<AccentColor, string> = {
@@ -27,6 +28,7 @@ const hoverColorClasses: Record<AccentColor, string> = {
   purple: "hover:text-readings-purple",
   cyan: "hover:text-system-cyan",
   highlight: "hover:text-highlight",
+  orange: "hover:text-substack-orange",
 };
 
 interface MobileMenuProps {

@@ -9,7 +9,7 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { label: "LETTERS", href: "/letters", accent: "red" },
-  { label: "SUBSTACK", href: "https://bdsterling.substack.com/", accent: "green", external: true },
+  { label: "SUBSTACK", href: "https://bdsterling.substack.com/", accent: "orange", external: true },
   { label: "BD STERLING", href: "/bd-sterling", accent: "amber" },
   { label: "MOVIES", href: "/movies", accent: "blue" },
   { label: "READINGS", href: "/readings", accent: "purple" },
