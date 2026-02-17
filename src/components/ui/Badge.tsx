@@ -17,6 +17,7 @@ const accentBadgeStyles: Record<AccentColor, string> = {
   pink: "bg-projects-pink/20 text-projects-pink",
   purple: "bg-readings-purple/20 text-readings-purple",
   cyan: "bg-system-cyan/20 text-system-cyan",
+  highlight: "bg-highlight/20 text-highlight",
 };
 
 export function Badge({ variant, accent = "green", children, className }: BadgeProps) {

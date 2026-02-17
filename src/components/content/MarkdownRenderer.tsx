@@ -17,6 +17,7 @@ const proseClasses: Record<AccentColor, string> = {
   pink: "prose-pink",
   purple: "prose-purple",
   cyan: "",
+  highlight: "",
 };
 
 export function MarkdownRenderer({ html, className, accent, amber }: MarkdownRendererProps) {

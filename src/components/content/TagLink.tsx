@@ -16,6 +16,7 @@ const hoverColors: Record<AccentColor, string> = {
   pink: "hover:text-projects-pink",
   purple: "hover:text-readings-purple",
   cyan: "hover:text-system-cyan",
+  highlight: "hover:text-highlight",
 };
 
 export function TagLink({ tag, accent = "green" }: TagLinkProps) {
