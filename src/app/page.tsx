@@ -10,7 +10,6 @@ import { QuoteWidget } from "@/components/dashboard/QuoteWidget";
 
 export default function Home() {
   const latestLetter = getLatestPost("letters");
-  const latestMarket = getLatestPost("markets");
   const projects = getAllPosts("projects").slice(0, 3);
 
   return (
@@ -23,7 +22,7 @@ export default function Home() {
           {/* Left column */}
           <div className="md:col-span-2 space-y-4">
             <LatestEssay post={latestLetter} />
-            <LatestMarket post={latestMarket} />
+            <LatestMarket />
           </div>
           {/* Right column */}
           <div className="space-y-4">

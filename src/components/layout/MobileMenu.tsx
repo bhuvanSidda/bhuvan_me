@@ -76,21 +76,39 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 }}
                   >
-                    <Link
-                      href={item.href}
-                      onClick={onClose}
-                      className={cn(
-                        "block py-3 font-mono text-lg tracking-wider transition-colors",
-                        isActive
-                          ? accentColorClasses[item.accent]
-                          : cn("text-terminal-text-dim", hoverColorClasses[item.accent])
-                      )}
-                    >
-                      <span className="text-terminal-text-dim">
-                        {String(i + 1).padStart(2, "0")}{" "}
-                      </span>
-                      {item.label}
-                    </Link>
+                    {item.external ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={onClose}
+                        className={cn(
+                          "block py-3 font-mono text-lg tracking-wider transition-colors",
+                          cn("text-terminal-text-dim", hoverColorClasses[item.accent])
+                        )}
+                      >
+                        <span className="text-terminal-text-dim">
+                          {String(i + 1).padStart(2, "0")}{" "}
+                        </span>
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        onClick={onClose}
+                        className={cn(
+                          "block py-3 font-mono text-lg tracking-wider transition-colors",
+                          isActive
+                            ? accentColorClasses[item.accent]
+                            : cn("text-terminal-text-dim", hoverColorClasses[item.accent])
+                        )}
+                      >
+                        <span className="text-terminal-text-dim">
+                          {String(i + 1).padStart(2, "0")}{" "}
+                        </span>
+                        {item.label}
+                      </Link>
+                    )}
                   </motion.div>
                 );
               })}

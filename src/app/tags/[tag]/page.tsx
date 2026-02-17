@@ -13,7 +13,6 @@ interface Props {
 
 const sectionConfig: Record<ContentSection, { accent: AccentColor; label: string; path: string }> = {
   letters: { accent: "red", label: "Letters", path: "/letters" },
-  markets: { accent: "green", label: "Markets", path: "/markets" },
   movies: { accent: "blue", label: "Movies", path: "/movies" },
   projects: { accent: "pink", label: "Projects", path: "/projects" },
   readings: { accent: "purple", label: "Readings", path: "/readings" },

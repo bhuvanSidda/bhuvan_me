@@ -75,7 +75,6 @@ export interface TaggedPost extends Post {
 
 const taggableSections: { section: ContentSection; accent: AccentColor; label: string }[] = [
   { section: "letters", accent: "red", label: "Letters" },
-  { section: "markets", accent: "green", label: "Markets" },
   { section: "movies", accent: "blue", label: "Movies" },
   { section: "projects", accent: "pink", label: "Projects" },
   { section: "readings", accent: "purple", label: "Readings" },

@@ -4,11 +4,12 @@ export interface NavItem {
   label: string;
   href: string;
   accent: AccentColor;
+  external?: boolean;
 }
 
 export const navItems: NavItem[] = [
   { label: "LETTERS", href: "/letters", accent: "red" },
-  { label: "MARKETS", href: "/markets", accent: "green" },
+  { label: "SUBSTACK", href: "https://bdsterling.substack.com/", accent: "green", external: true },
   { label: "BD STERLING", href: "/bd-sterling", accent: "amber" },
   { label: "MOVIES", href: "/movies", accent: "blue" },
   { label: "READINGS", href: "/readings", accent: "purple" },

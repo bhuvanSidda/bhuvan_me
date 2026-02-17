@@ -48,17 +48,29 @@ export function Navbar() {
         <div className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => {
             const isActive =
-              pathname === item.href || pathname.startsWith(item.href + "/");
-            return (
+              !item.external &&
+              (pathname === item.href || pathname.startsWith(item.href + "/"));
+            const className = cn(
+              "font-mono text-xs tracking-wider transition-colors",
+              isActive
+                ? accentColorClasses[item.accent]
+                : cn("text-terminal-text-dim", hoverColorClasses[item.accent])
+            );
+            return item.external ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={className}
+              >
+                {item.label}
+              </a>
+            ) : (
               <Link
                 key={item.href}
                 href={item.href}
-                className={cn(
-                  "font-mono text-xs tracking-wider transition-colors",
-                  isActive
-                    ? accentColorClasses[item.accent]
-                    : cn("text-terminal-text-dim", hoverColorClasses[item.accent])
-                )}
+                className={className}
               >
                 {item.label}
               </Link>

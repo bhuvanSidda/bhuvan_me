@@ -18,20 +18,38 @@ export function QuickLinks() {
   return (
     <Panel title="QUICK LINKS">
       <div className="space-y-2">
-        {navItems.map((item, i) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={`group flex items-center gap-2 font-mono text-sm text-terminal-text-dim transition-colors ${hoverColorClasses[item.accent]}`}
-          >
-            <span className="text-terminal-text-dim">
-              {String(i + 1).padStart(2, "0")}
-            </span>
-            <span className={`transition-colors ${hoverColorClasses[item.accent]}`}>
-              {item.label}
-            </span>
-          </Link>
-        ))}
+        {navItems.map((item, i) => {
+          const className = `group flex items-center gap-2 font-mono text-sm text-terminal-text-dim transition-colors ${hoverColorClasses[item.accent]}`;
+          const children = (
+            <>
+              <span className="text-terminal-text-dim">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className={`transition-colors ${hoverColorClasses[item.accent]}`}>
+                {item.label}
+              </span>
+            </>
+          );
+          return item.external ? (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={className}
+            >
+              {children}
+            </a>
+          ) : (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={className}
+            >
+              {children}
+            </Link>
+          );
+        })}
       </div>
     </Panel>
   );
