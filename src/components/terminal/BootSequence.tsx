@@ -6,16 +6,13 @@ import { Cursor } from "./Cursor";
 
 const bootLines = [
   { text: "> INITIALIZING SYSTEM...", delay: 0 },
-  { text: "> LOADING BHUVAN.ME v1.0.0", delay: 600 },
-  { text: "> ████████████████████████ 100%", delay: 1400 },
-  { text: ">", delay: 2000 },
-  { text: "> NAME:     Bhuvan", delay: 2400 },
-  { text: "> STATUS:   ONLINE", delay: 2800 },
-  { text: ">", delay: 3200 },
-  { text: "> Welcome.", delay: 3600 },
+  { text: "> LOADING BHUVAN.ME v1.0.0", delay: 300 },
+  { text: "> ████████████████████████ 100%", delay: 700 },
+  { text: "> STATUS:   ONLINE", delay: 1100 },
+  { text: "> Welcome.", delay: 1500 },
 ];
 
-const BOOT_DURATION = 4800;
+const BOOT_DURATION = 2200;
 const SESSION_KEY = "bhuvan-me-booted";
 
 export function BootSequence({ children }: { children: React.ReactNode }) {

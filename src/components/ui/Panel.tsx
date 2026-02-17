@@ -18,6 +18,7 @@ const accentStyles: Record<AccentColor, string> = {
   pink: "border-projects-pink/30 text-projects-pink",
   purple: "border-readings-purple/30 text-readings-purple",
   cyan: "border-system-cyan/30 text-system-cyan",
+  highlight: "border-highlight/30 text-highlight",
 };
 
 export function Panel({ title, accent = "green", children, className }: PanelProps) {

@@ -24,4 +24,4 @@ export interface PostWithHTML extends Post {
 
 export type ContentSection = "letters" | "markets" | "movies" | "projects" | "readings" | "bd-sterling/investor-letters";
 
-export type AccentColor = "red" | "green" | "amber" | "blue" | "pink" | "purple" | "cyan";
+export type AccentColor = "red" | "green" | "amber" | "blue" | "pink" | "purple" | "cyan" | "highlight";

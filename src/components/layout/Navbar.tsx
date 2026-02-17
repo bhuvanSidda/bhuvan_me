@@ -16,6 +16,7 @@ const accentColorClasses: Record<AccentColor, string> = {
   pink: "text-projects-pink",
   purple: "text-readings-purple",
   cyan: "text-system-cyan",
+  highlight: "text-highlight",
 };
 
 const hoverColorClasses: Record<AccentColor, string> = {
@@ -26,6 +27,7 @@ const hoverColorClasses: Record<AccentColor, string> = {
   pink: "hover:text-projects-pink",
   purple: "hover:text-readings-purple",
   cyan: "hover:text-system-cyan",
+  highlight: "hover:text-highlight",
 };
 
 export function Navbar() {
@@ -37,7 +39,7 @@ export function Navbar() {
       <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-4">
         <Link
           href="/"
-          className="font-mono text-sm font-bold tracking-wider text-bloomberg-green transition-colors hover:text-bloomberg-green/80"
+          className="font-mono text-sm font-bold tracking-wider text-highlight transition-colors hover:text-highlight/80"
         >
           BHUVAN.ME
         </Link>
