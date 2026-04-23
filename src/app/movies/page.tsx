@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/content";
 import { Panel } from "@/components/ui/Panel";
 import { PageTransition } from "@/components/ui/PageTransition";
 import Link from "next/link";
+import { toWatch } from "@/config/to-watch";
 
 export const metadata: Metadata = {
   title: "Movies",
@@ -55,6 +56,43 @@ export default function MoviesPage() {
           </div>
         )}
       </Panel>
+
+      <div className="mt-6">
+        <Panel title="TO WATCH" accent="blue">
+          <p className="mb-4 font-mono text-xs text-terminal-text-dim">
+            {">"} Queue of films on the list.
+          </p>
+
+          {toWatch.length === 0 ? (
+            <p className="font-mono text-sm text-terminal-text-dim">
+              {">"} List is empty.
+            </p>
+          ) : (
+            <ul className="divide-y divide-terminal-border">
+              {toWatch.map((item) => (
+                <li
+                  key={`${item.title}-${item.year}`}
+                  className="flex items-baseline justify-between gap-4 py-2 first:pt-0 last:pb-0"
+                >
+                  <div className="min-w-0">
+                    <span className="font-mono text-sm text-terminal-text">
+                      {item.title}
+                    </span>
+                    {item.note && (
+                      <span className="ml-2 font-mono text-xs text-terminal-text-dim">
+                        — {item.note}
+                      </span>
+                    )}
+                  </div>
+                  <span className="shrink-0 font-mono text-xs text-terminal-text-dim">
+                    {item.year} · {item.director}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </Panel>
+      </div>
     </div>
     </PageTransition>
   );
