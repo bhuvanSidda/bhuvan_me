@@ -1,131 +1,98 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/crimson-pro-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/crimson-pro-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/crimson-pro-600.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/crimson-pro-700.ttf") format("truetype");
+}
+
 @theme inline {
-  /* Bloomberg Terminal Colors */
-  --color-terminal-black: #0d0d0d;
-  --color-terminal-panel: #1c1c1c;
-  --color-terminal-border: #333333;
-  --color-bloomberg-green: #00e676;
-  --color-sterling-amber: #ffb300;
-  --color-bloomberg-red: #ff5252;
-  --color-letters-red: #ef4444;
-  --color-movies-blue: #5eaaff;
-  --color-projects-pink: #f06292;
-  --color-readings-purple: #b794f6;
-  --color-substack-orange: #ff8c00;
-  --color-system-cyan: #34d9ed;
-  --color-highlight: #e53935;
-  --color-terminal-text: #ebebeb;
-  --color-terminal-text-dim: #9a9a9a;
-
-  /* Fonts */
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-
-  /* Animations */
-  --animate-blink: blink 1s step-end infinite;
-  --animate-fade-in: fadeIn 0.5s ease-out forwards;
-  --animate-slide-up: slideUp 0.4s ease-out forwards;
-  --animate-ticker: ticker 30s linear infinite;
-
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  @keyframes slideUp {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+  --font-serif: "Crimson Pro", Georgia, serif;
 }
 
-/* Base styles */
+html {
+  background: #fff;
+}
+
 body {
-  background: var(--color-terminal-black);
-  color: var(--color-terminal-text);
-  font-family: var(--font-mono);
+  min-height: 100vh;
+  background: #fff;
+  color: #111;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
 }
 
-/* Scrollbar styling */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-terminal-black);
+a:hover {
+  text-decoration-thickness: 1.5px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-terminal-border);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-terminal-text-dim);
-}
-
-/* Selection styling */
 ::selection {
-  background: var(--color-bloomberg-green);
-  color: var(--color-terminal-black);
+  background: #111;
+  color: #fff;
 }
 
-/* Prose overrides for dark terminal theme */
-.prose {
-  --tw-prose-body: var(--color-terminal-text);
-  --tw-prose-headings: #ffffff;
-  --tw-prose-links: var(--color-bloomberg-green);
-  --tw-prose-bold: #ffffff;
-  --tw-prose-counters: var(--color-terminal-text-dim);
-  --tw-prose-bullets: var(--color-terminal-text-dim);
-  --tw-prose-hr: var(--color-terminal-border);
-  --tw-prose-quotes: var(--color-terminal-text);
-  --tw-prose-quote-borders: var(--color-bloomberg-green);
-  --tw-prose-code: var(--color-bloomberg-green);
-  --tw-prose-pre-code: var(--color-terminal-text);
-  --tw-prose-pre-bg: var(--color-terminal-panel);
-  --tw-prose-th-borders: var(--color-terminal-border);
-  --tw-prose-td-borders: var(--color-terminal-border);
+.site-container {
+  margin: 0 auto;
+  max-width: 43rem;
+  padding: 2rem 1.25rem;
 }
 
-.prose-amber {
-  --tw-prose-links: var(--color-sterling-amber);
-  --tw-prose-quote-borders: var(--color-sterling-amber);
-  --tw-prose-code: var(--color-sterling-amber);
+.page-title {
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-.prose-red {
-  --tw-prose-links: var(--color-letters-red);
-  --tw-prose-quote-borders: var(--color-letters-red);
-  --tw-prose-code: var(--color-letters-red);
+.page-copy {
+  max-width: 35rem;
 }
 
-.prose-blue {
-  --tw-prose-links: var(--color-movies-blue);
-  --tw-prose-quote-borders: var(--color-movies-blue);
-  --tw-prose-code: var(--color-movies-blue);
+.page-copy p + p {
+  margin-top: 1rem;
 }
 
-.prose-pink {
-  --tw-prose-links: var(--color-projects-pink);
-  --tw-prose-quote-borders: var(--color-projects-pink);
-  --tw-prose-code: var(--color-projects-pink);
-}
+@media (max-width: 640px) {
+  body {
+    font-size: 19px;
+  }
 
-.prose-purple {
-  --tw-prose-links: var(--color-readings-purple);
-  --tw-prose-quote-borders: var(--color-readings-purple);
-  --tw-prose-code: var(--color-readings-purple);
+  .site-container {
+    padding: 1.5rem 1rem;
+  }
 }

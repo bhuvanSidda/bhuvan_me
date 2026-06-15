@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Projects by Bhuvan.",
+  title: "Contact",
+  description: "Contact Bhuvan.",
 };
 
-export default function ProjectsPage() {
+export default function ContactPage() {
   return (
     <section className="site-container">
-      <h1 className="page-title">Projects</h1>
+      <h1 className="page-title">Contact</h1>
       <div className="page-copy">
         <p>Content coming soon.</p>
       </div>
